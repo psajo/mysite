@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    {% load static %}
+    body {
+        background-image : url('{% static 'prediction/background.jpg' %}');
+        background-repeat: no-repeat;
+        background-size : cover;
+        }
+
+
+    </style>
+</head>
+<body>
+<div>
+    <div>
+        <h1 align="center">
+            {% for champion in champions %}
+            {{champion.image}}
+            {% endfor %}
+            {{champions|length}}
+            인공지능 기반 팀 매칭 프로그램
+        </h1>
+    </div>
+    <div class="main">
+        <table align="center">
+            <tr>
+                <td colspan="2" align="center"> Team 1 </td>
+                <td>&nbsp;</td>
+                <td colspan="2" align="center"> Team 2 </td>
+                <td>&nbsp;</td>
+                <td colspan="2" align="center"> Algorism </td>
+            </tr>
+<!--            2행-->
+            <tr>
+                <td>Champion1</td>
+                <td colspan="1">
+                    <input type="text" value="">
+                </td>
+                <td>&nbsp;</td>
+                <td>Champion1</td>
+                <td colspan="1">
+                    <input type="text">
+                </td>
+                <td>&nbsp;</td>
+                <td>ANN</td>
+                <td>
+                    <input name="model" type="radio", checked>
+                </td>
+            </tr>
+<!--            3행-->
+            <tr>
+                <td>Champion2</td>
+                <td colspan="1">
+                    <input type="text">
+                </td>
+                <td>&nbsp;</td>
+                <td>Champion2</td>
+                <td colspan="1">
+                    <input type="text">
+                </td>
+                <td>&nbsp;</td>
+                <td>CNN</td>
+                <td>
+                    <input name="model" type="radio">
+                </td>
+            </tr>
+<!--            4행-->
+            <tr>
+                <td>Champion3</td>
+                <td colspan="1">
+                    <input type="text">
+                </td>
+                <td>&nbsp;</td>
+                <td>Champion3</td>
+                <td colspan="1">
+                    <input type="text">
+                </td>
+                <td>&nbsp;</td>
+                <td>RNN</td>
+                <td>
+                    <input name="model" type="radio">
+                </td>
+<!--            5행-->
+            <tr>
+                <td>Champion4</td>
+                <td colspan="1">
+                    <input type="text">
+                </td>
+                <td>&nbsp;</td>
+                <td>Champion4</td>
+                <td colspan="1">
+                    <input type="text">
+                </td>
+                <td>&nbsp;</td>
+                <td>LSTM</td>
+                <td>
+                    <input name="model" type="radio">
+                </td>
+            </tr>
+<!--            6행-->
+            <tr>
+                <td>Champion5</td>
+                <td colspan="1">
+                    <input type="text">
+                </td>
+                <td>&nbsp;</td>
+                <td>Champion5</td>
+                <td colspan="1">
+                    <input type="text">
+                </td>
+                <td>&nbsp;</td>
+                <td>Logistic</td>
+                <td>
+                    <input name="model" type="radio">
+                </td>
+            </tr>
+<!--            7행-->
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+<!--            8행-->
+            <tr>
+                <td>&nbsp;</td>
+                <td colspan="2" align="right">A팀이 이길 확률 : </td>
+                <td align="center">50</td>
+                <td>%</td>
+            </tr>
+<!--            9행-->
+            <tr>
+                <td>&nbsp;</td>
+                <td colspan="2" align="right">B팀이 이길 확률 : </td>
+                <td align="center">50</td>
+                <td>%</td>
+            </tr>
+<!--          10 행-->
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+<!--           11 행-->
+            <tr>
+                <td>&nbsp;</td>
+                <!--   우위팀 입력     -->
+                <td colspan="2" align="center">A</td>
+                <td colspan="2">팀이 우위</td>
+                <td>
+                    <input type="button" value="결과 예측">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+
+</body>
+</html>
