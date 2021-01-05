@@ -1,0 +1,1118 @@
+body {
+        background-image : url('../images/background.jpg');
+        background-repeat: no-repeat;
+        background-size : cover;
+}
+.contents{
+    font-size: 25px;
+}
+.predict_btn {
+    font-size:25px;
+    width : 120px;
+    height:50px;
+    border-radius : 5px;
+}
+.titleArea{
+    text-align:center;
+}
+.inputArea{
+    display:flex;
+    justify-content : center;
+}
+.modelArea{
+    margin : 30px 50px;
+}
+.resultArea{
+    text-align : center;
+    margin-top : 30px;
+    display:flex;
+    justify-content : center;
+}
+.resultArea td {
+    padding-left:100px;
+    padding-right:100px;
+}
+.inputChampName {
+    line-height : 50px;
+    font-size : 22px;
+    width : 250px;
+}
+i{ display:inline-block;}
+.blankChamp {
+    display : inline-block;
+    background-image : url(../images/blankChamp.png);
+    background-repeat:no-repeat;
+    background-size : 48px 48px;
+    width : 48px;
+    height : 48px;
+}
+.Aatrox{
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : 0px 0px;
+}
+.Ahri {
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -48px 0px;
+}
+.Akali {
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -96px 0px;
+}
+.Alistar {
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -144px 0px;
+}
+.Amumu {
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -192px 0px;
+}
+.Anivia {
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -240px 0px;
+}
+.Annie {
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -288px 0px;
+}
+.Aphelios {
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -336px 0px;
+}
+.Ashe {
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -384px 0px;
+}
+.AurelionSol {
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -432px 0px;
+}
+.Azir {
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : 0px -48px;
+}.Bard {
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -48px -48px;
+}
+.Blitzcrank {
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -96px -48px;
+}
+.Brand {
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -144px -48px;
+}
+.Braum {
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -192px -48px;
+}
+.Caitlyn {
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -240px -48px;
+}
+.Camille {
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -288px -48px;
+}
+.Cassiopeia {
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -336px -48px;
+}
+.Chogath {
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -384px -48px;
+}
+.Corki {
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -432px -48px;
+}
+.Darius {
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -0px -96px;
+}
+.Diana {
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -48px -96px;
+}
+.Draven {
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -96px -96px;
+}
+.DrMundo {
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -144px -96px;
+}
+.Ekko {
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -192px -96px;
+}
+.Elise {
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -240px -96px;
+}
+.Evelynn {
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -288px -96px;
+}
+.Ezreal {
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -336px -96px;
+}
+.Fiddlesticks {
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -384px -96px;
+}
+.Fiora {
+    background-image : url(../images/champion0.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -432px -96px;
+}
+.Fizz {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -0px 0px;
+}
+.Galio {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -48px 0px;
+}
+.Gangplank {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -96px -0px;
+}
+.Garen {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -144px -0px;
+}
+.Gnar {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -192px -0px;
+}
+.Gragas {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -240px -0px;
+}
+.Graves {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -288px -0px;
+}
+.Hecarim {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -336px -0px;
+}
+.Heimerdinger {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -384px -0px;
+}
+.Illaoi {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -432px -0px;
+}
+.Irelia {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -0px -48px;
+}
+.Ivern {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -48px -48px;
+}
+.Janna {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -96px -48px;
+}
+.JarvanIV {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -144px -48px;
+}
+.Jax {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -192px -48px;
+}
+.Jayce {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -240px -48px;
+}
+.Jhin {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -288px -48px;
+}
+.Jinx {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -336px -48px;
+}
+.Kaisa {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -384px -48px;
+}
+.Kalista {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -432px -48px;
+}
+.Karma {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -0px -96px;
+}
+.Karthus {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -48px -96px;
+}
+.Kassadin {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -96px -96px;
+}
+.Katarina {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -144px -96px;
+}
+.Kayle {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -192px -96px;
+}
+.Kayn {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -240px -96px;
+}
+.Kennen {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -288px -96px;
+}
+.Khazix {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -336px -96px;
+}
+.Kindred {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -384px -96px;
+}
+.Kled {
+    background-image : url(../images/champion1.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -432px -96px;
+}
+.KogMaw {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -0px -0px;
+}
+.Leblanc {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -48px -0px;
+}
+.LeeSin {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -96px -0px;
+}
+.Leona {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -144px -0px;
+}
+.Lillia {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -192px -0px;
+}
+.Lissandra {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -240px -0px;
+}
+.Lucian {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -288px -0px;
+}
+.Lulu {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -336px -0px;
+}
+.Lux {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -384px -0px;
+}
+.Malphite {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -432px -0px;
+}
+.Malzahar {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -0px -48px;
+}
+.Maokai {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -48px -48px;
+}
+.MasterYi {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -96px -48px;
+}
+.MissFortune {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -144px -48px;
+}
+.MonkeyKing {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -192px -48px;
+}
+.Mordekaiser {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -240px -48px;
+}
+.Morgana {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -288px -48px;
+}
+.Nami {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -336px -48px;
+}
+.Nasus {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -384px -48px;
+}
+.Nautilus {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -432px -48px;
+}
+.Neeko {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -0px -96px;
+}
+.Nidalee {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -48px -96px;
+}
+.Nocturne {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -96px -96px;
+}
+.Nunu {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -144px -96px;
+}
+.Olaf {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -192px -96px;
+}
+.Orianna {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -240px -96px;
+}
+.Ornn {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -288px -96px;
+}
+.Pantheon {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -336px -96px;
+}
+.Poppy {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -384px -96px;
+}
+.Pyke {
+    background-image : url(../images/champion2.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -432px -96px;
+}
+.Qiyana {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -0px -0px;
+}
+.Quinn {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -48px -0px;
+}
+.Rakan {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -96px -0px;
+}
+.Rammus {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -144px -0px;
+}
+.RekSai {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -192px -0px;
+}
+.Rell {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -240px -0px;
+}
+.Renekton {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -288px -0px;
+}
+.Rengar {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -336px -0px;
+}
+.Riven {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -384px -100px;
+}
+.Rumble {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -432px -0px;
+}
+.Ryze {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -0px -48px;
+}
+.Samira {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -48px -48px;
+}
+.Sejuani {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -96px -48px;
+}
+.Senna {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -144px -48px;
+}
+.Seraphine {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -192px -48px;
+}
+.Sett {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -240px -48px;
+}
+.Shaco {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -288px -48px;
+}
+.Shen {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -336px -48px;
+}
+.Shyvana {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -384px -48px;
+}
+.Singed {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -432px -48px;
+}
+.Sion {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -0px -96px;
+}
+.Sivir {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -48px -96px;
+}
+.Skarner {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -96px -96px;
+}
+.Sona {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -144px -96px;
+}
+.Soraka {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -192px -96px;
+}
+.Swain {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -240px -96px;
+}
+.Sylas {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -288px -96px;
+}
+.Syndra {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -336px -96px;
+}
+.TahmKench {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -384px -96px;
+}
+.Taliyah {
+    background-image : url(../images/champion3.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -432px -96px;
+}
+.Talon {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -0px -0px;
+}
+.Taric {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -48px -0px;
+}
+.Teemo {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -96px -0px;
+}
+.Thresh {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -144px -0px;
+}
+.Tristana {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -192px -0px;
+}
+.Trundle {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -240px -0px;
+}
+.Tryndamere {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -288px -0px;
+}
+.TwistedFate {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -336px -0px;
+}
+.Twitch {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -384px -0px;
+}
+.Udyr {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -432px -0px;
+}
+.Urgot {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -0px -48px;
+}
+.Varus {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -48px -48px;
+}
+.Vayne {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -96px -48px;
+}
+.Veigar {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -144px -48px;
+}
+.Velkoz {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -192px -48px;
+}
+.Vi {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -240px -48px;
+}
+.Viktor {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -288px -48px;
+}
+.Vladimir {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -336px -48px;
+}
+.Volibear {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -384px -48px;
+}
+.Warwick {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -432px -48px;
+}
+.Xayah {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -0px -96px;
+}
+.Xerath {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -48px -96px;
+}
+.XinZhao {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -96px -96px;
+}
+.Yasuo {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -144px -96px;
+}
+.Yone {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -196px -96px;
+}
+.Yorick {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -240px -96px;
+}
+.Yuumi {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -288px -96px;
+}
+.Zac {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -336px -96px;
+}
+.Zed {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -384px -96px;
+}
+.Ziggs {
+    background-image : url(../images/champion4.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -432px -96px;
+}
+.Zilean {
+    background-image : url(../images/champion5.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -0px -0px;
+}
+.Zoe {
+    background-image : url(../images/champion5.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -48px -0px;
+}
+.Zyra {
+    background-image : url(../images/champion5.png);
+    background-repeat:no-repeat;
+    width : 48px;
+    height : 48px;
+    background-position : -96px -0px;
+}

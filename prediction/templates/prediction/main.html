@@ -3,158 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style>
     {% load static %}
-    body {
-        background-image : url('{% static 'prediction/background.jpg' %}');
-        background-repeat: no-repeat;
-        background-size : cover;
-        }
-
-
-    </style>
+    <link rel="stylesheet" href="{% static 'prediction/css/main.css' %}">
 </head>
 <body>
-<div>
-    <div>
-        <h1 align="center">
-            {% for champion in champions %}
-            {{champion.image}}
-            {% endfor %}
-            {{champions|length}}
-            인공지능 기반 팀 매칭 프로그램
-        </h1>
+<div class="contents">
+    <div class="titleArea">
+        <h1>인공지능 기반 승패 예측 프로그램</h1>
     </div>
-    <div class="main">
-        <table align="center">
+    <div class="inputArea">
+        <div class="champArea">
+            <table>
+                <tr>
+                    <th colspan="2">A팀 챔피언</th><th colspan="2">B팀 챔피언</th>
+                </tr>
+                <tr>
+                    <td><i class="blankChamp" id="champ1_img"></i></td>
+                    <td><input type="text" class="inputChampName" maxlength="10" id="champ1" name="champ1" value="" placeholder="챔피언1"></td>
+                    <td><i class="blankChamp" id="champ6_img"></i></td>
+                    <td><input type="text" class="inputChampName" maxlength="10" id="champ6" name="champ6" value=""  placeholder="챔피언6"></td>
+                </tr>
+                <tr>
+                    <td><i class="blankChamp" id="champ2_img"></i></td>
+                    <td><input type="text" class="inputChampName" maxlength="10" id="champ2" name="champ2" value="" placeholder="챔피언2"></td>
+                    <td><i class="blankChamp" id="champ7_img"></i></td>
+                    <td><input type="text" class="inputChampName" maxlength="10" id="champ7" name="champ7" value=""  placeholder="챔피언7"></td>
+                </tr>
+                <tr>
+                    <td><i class="blankChamp" id="champ3_img"></i></td>
+                    <td><input type="text" class="inputChampName" maxlength="10" id="champ3" name="champ3" value="" placeholder="챔피언3"></td>
+                    <td><i class="blankChamp" id="champ8_img"></i></td>
+                    <td><input type="text" class="inputChampName" maxlength="10" id="champ8" name="champ8" value=""  placeholder="챔피언8"></td>
+                </tr>
+                <tr>
+                    <td><i class="blankChamp" id="champ4_img"></i></td>
+                    <td><input type="text" class="inputChampName" maxlength="10" id="champ4" name="champ4" value="" placeholder="챔피언4"></td>
+                    <td><i class="blankChamp" id="champ9_img"></i></td>
+                    <td><input type="text" class="inputChampName" maxlength="10" id="champ9" name="champ9" value=""  placeholder="챔피언9"></td>
+                </tr>
+                <tr>
+                    <td><i class="blankChamp" id="champ5_img"></i></td>
+                    <td><input type="text" class="inputChampName" maxlength="10" id="champ5" name="champ5" value="" placeholder="챔피언5"></td>
+                    <td><i class="blankChamp" id="champ10_img"></i></td>
+                    <td><input type="text" class="inputChampName" maxlength="10" id="champ10" name="champ10" value=""  placeholder="챔피언10"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="modelArea">
+            <table>
+                <tr>
+                    <th>예측 모델</th>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="modelName" value="ANN">ANN</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="modelName" value="CNN">CNN</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="modelName" value="RNN">RNN</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="modelName" value="LSTM">LSTM</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="modelName" value="Logistic">Logistic</td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="predict_btn" value="예측하기"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="resultArea">
+        <table>
             <tr>
-                <td colspan="2" align="center"> Team 1 </td>
-                <td>&nbsp;</td>
-                <td colspan="2" align="center"> Team 2 </td>
-                <td>&nbsp;</td>
-                <td colspan="2" align="center"> Algorism </td>
+                <th colspan="2">예측 결과</th>
             </tr>
-<!--            2행-->
             <tr>
-                <td>Champion1</td>
-                <td colspan="1">
-                    <input type="text" value="">
-                </td>
-                <td>&nbsp;</td>
-                <td>Champion1</td>
-                <td colspan="1">
-                    <input type="text">
-                </td>
-                <td>&nbsp;</td>
-                <td>ANN</td>
-                <td>
-                    <input name="model" type="radio", checked>
-                </td>
+                <th>A팀 승리 확률</th><th>B팀 승리 확률</th>
             </tr>
-<!--            3행-->
             <tr>
-                <td>Champion2</td>
-                <td colspan="1">
-                    <input type="text">
-                </td>
-                <td>&nbsp;</td>
-                <td>Champion2</td>
-                <td colspan="1">
-                    <input type="text">
-                </td>
-                <td>&nbsp;</td>
-                <td>CNN</td>
-                <td>
-                    <input name="model" type="radio">
-                </td>
-            </tr>
-<!--            4행-->
-            <tr>
-                <td>Champion3</td>
-                <td colspan="1">
-                    <input type="text">
-                </td>
-                <td>&nbsp;</td>
-                <td>Champion3</td>
-                <td colspan="1">
-                    <input type="text">
-                </td>
-                <td>&nbsp;</td>
-                <td>RNN</td>
-                <td>
-                    <input name="model" type="radio">
-                </td>
-<!--            5행-->
-            <tr>
-                <td>Champion4</td>
-                <td colspan="1">
-                    <input type="text">
-                </td>
-                <td>&nbsp;</td>
-                <td>Champion4</td>
-                <td colspan="1">
-                    <input type="text">
-                </td>
-                <td>&nbsp;</td>
-                <td>LSTM</td>
-                <td>
-                    <input name="model" type="radio">
-                </td>
-            </tr>
-<!--            6행-->
-            <tr>
-                <td>Champion5</td>
-                <td colspan="1">
-                    <input type="text">
-                </td>
-                <td>&nbsp;</td>
-                <td>Champion5</td>
-                <td colspan="1">
-                    <input type="text">
-                </td>
-                <td>&nbsp;</td>
-                <td>Logistic</td>
-                <td>
-                    <input name="model" type="radio">
-                </td>
-            </tr>
-<!--            7행-->
-            <tr>
-                <td>&nbsp;</td>
-            </tr>
-<!--            8행-->
-            <tr>
-                <td>&nbsp;</td>
-                <td colspan="2" align="right">A팀이 이길 확률 : </td>
-                <td align="center">50</td>
-                <td>%</td>
-            </tr>
-<!--            9행-->
-            <tr>
-                <td>&nbsp;</td>
-                <td colspan="2" align="right">B팀이 이길 확률 : </td>
-                <td align="center">50</td>
-                <td>%</td>
-            </tr>
-<!--          10 행-->
-            <tr>
-                <td>&nbsp;</td>
-            </tr>
-<!--           11 행-->
-            <tr>
-                <td>&nbsp;</td>
-                <!--   우위팀 입력     -->
-                <td colspan="2" align="center">A</td>
-                <td colspan="2">팀이 우위</td>
-                <td>
-                    <input type="button" value="결과 예측">
-                </td>
+                <td>00.00%</td><td>00.00%</td>
             </tr>
         </table>
     </div>
-
 </div>
-
-
 </body>
+<script src="{% static 'prediction/js/jquery-3.x-git.js'%}"></script>
+<script>
+    var champions = {{champions|safe}}
+    console.log(champions);
+    function searchChampion(name) {
+        for(var i=0; i<champions.length; i++) {
+            var finded = false;
+            var champ = "blankChamp";
+            if (champions[i]['fields']['name'] ==name) {
+                champ= champions[i]['fields']['id'];
+                break;
+            }else {
+                champ= "blankChamp";
+            }
+        }
+        return champ;
+    }
+    {% for _ in "x"|rjust:"10" %}
+        $("#champ{{forloop.counter}}").on({
+            'input': function() {
+                name =$(this).val();
+                console.log(name);
+                cn = searchChampion(name);
+                $("#champ{{forloop.counter}}_img").attr('class',cn);
+                console.log("클래스변경 ",cn);
+            }
+    });
+    {% endfor %}
+    console.log(searchChampion("올라프"));
+    console.log(champions[0]['fields']['id'],champions[0]['fields']['name']);
+    console.log(champions[1]['fields']['name']);
+</script>
 </html>
