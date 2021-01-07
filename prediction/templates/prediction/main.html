@@ -19,33 +19,33 @@
                 </tr>
                 <tr>
                     <td><i class="blankChamp" id="champ1_img"></i></td>
-                    <td><input type="text" class="inputChampName" maxlength="10" id="champ1" name="champ1" value="" placeholder="챔피언1"></td>
+                    <td><input type="text" class="inputChampName" maxlength="10" id="champ1" name="champ1" value="{{champs.champ1}}" placeholder="챔피언1"></td>
                     <td><i class="blankChamp" id="champ6_img"></i></td>
-                    <td><input type="text" class="inputChampName" maxlength="10" id="champ6" name="champ6" value=""  placeholder="챔피언6"></td>
+                    <td><input type="text" class="inputChampName" maxlength="10" id="champ6" name="champ6" value="{{champs.champ6}}"  placeholder="챔피언6"></td>
                 </tr>
                 <tr>
                     <td><i class="blankChamp" id="champ2_img"></i></td>
-                    <td><input type="text" class="inputChampName" maxlength="10" id="champ2" name="champ2" value="" placeholder="챔피언2"></td>
+                    <td><input type="text" class="inputChampName" maxlength="10" id="champ2" name="champ2" value="{{champs.champ2}}" placeholder="챔피언2"></td>
                     <td><i class="blankChamp" id="champ7_img"></i></td>
-                    <td><input type="text" class="inputChampName" maxlength="10" id="champ7" name="champ7" value=""  placeholder="챔피언7"></td>
+                    <td><input type="text" class="inputChampName" maxlength="10" id="champ7" name="champ7" value="{{champs.champ7}}"  placeholder="챔피언7"></td>
                 </tr>
                 <tr>
                     <td><i class="blankChamp" id="champ3_img"></i></td>
-                    <td><input type="text" class="inputChampName" maxlength="10" id="champ3" name="champ3" value="" placeholder="챔피언3"></td>
+                    <td><input type="text" class="inputChampName" maxlength="10" id="champ3" name="champ3" value="{{champs.champ3}}" placeholder="챔피언3"></td>
                     <td><i class="blankChamp" id="champ8_img"></i></td>
-                    <td><input type="text" class="inputChampName" maxlength="10" id="champ8" name="champ8" value=""  placeholder="챔피언8"></td>
+                    <td><input type="text" class="inputChampName" maxlength="10" id="champ8" name="champ8" value="{{champs.champ8}}"  placeholder="챔피언8"></td>
                 </tr>
                 <tr>
                     <td><i class="blankChamp" id="champ4_img"></i></td>
-                    <td><input type="text" class="inputChampName" maxlength="10" id="champ4" name="champ4" value="" placeholder="챔피언4"></td>
+                    <td><input type="text" class="inputChampName" maxlength="10" id="champ4" name="champ4" value="{{champs.champ4}}" placeholder="챔피언4"></td>
                     <td><i class="blankChamp" id="champ9_img"></i></td>
-                    <td><input type="text" class="inputChampName" maxlength="10" id="champ9" name="champ9" value=""  placeholder="챔피언9"></td>
+                    <td><input type="text" class="inputChampName" maxlength="10" id="champ9" name="champ9" value="{{champs.champ9}}"  placeholder="챔피언9"></td>
                 </tr>
                 <tr>
                     <td><i class="blankChamp" id="champ5_img"></i></td>
-                    <td><input type="text" class="inputChampName" maxlength="10" id="champ5" name="champ5" value="" placeholder="챔피언5"></td>
+                    <td><input type="text" class="inputChampName" maxlength="10" id="champ5" name="champ5" value="{{champs.champ5}}" placeholder="챔피언5"></td>
                     <td><i class="blankChamp" id="champ10_img"></i></td>
-                    <td><input type="text" class="inputChampName" maxlength="10" id="champ10" name="champ10" value=""  placeholder="챔피언10"></td>
+                    <td><input type="text" class="inputChampName" maxlength="10" id="champ10" name="champ10" value="{{champs.champ10}}"  placeholder="챔피언10"></td>
                 </tr>
             </table>
         </div>
@@ -55,22 +55,16 @@
                     <th>예측 모델</th>
                 </tr>
                 <tr>
-                    <td><input type="radio" name="modelName" value="ANN">ANN</td>
+                    <td><input type="radio" name="modelName" value="cibl" checked="checked">Bidirectional LSTM(챔피언아이디)</td>
                 </tr>
                 <tr>
-                    <td><input type="radio" name="modelName" value="CNN">CNN</td>
+                    <td><input type="radio" name="modelName" value="ctd">DNN(챔피언태그)</td>
                 </tr>
                 <tr>
-                    <td><input type="radio" name="modelName" value="RNN">RNN</td>
+                    <td><input type="radio" name="modelName" value="ccd">DNN(챔피언클래스)</td>
                 </tr>
                 <tr>
-                    <td><input type="radio" name="modelName" value="LSTM">LSTM</td>
-                </tr>
-                <tr>
-                    <td><input type="radio" name="modelName" value="Logistic">Logistic</td>
-                </tr>
-                <tr>
-                    <td><input type="button" class="predict_btn" value="예측하기"></td>
+                    <td><input type="button" id="predict_btn" class="predict_btn" value="예측하기"></td>
                 </tr>
             </table>
         </div>
@@ -84,7 +78,7 @@
                 <th>A팀 승리 확률</th><th>B팀 승리 확률</th>
             </tr>
             <tr>
-                <td>00.00%</td><td>00.00%</td>
+                <td><span id="teamA">{{score.team_a}}%</span></td><td><span id="teamB">{{score.team_b}}%</span></td>
             </tr>
         </table>
     </div>
@@ -118,8 +112,31 @@
             }
     });
     {% endfor %}
-    console.log(searchChampion("올라프"));
-    console.log(champions[0]['fields']['id'],champions[0]['fields']['name']);
-    console.log(champions[1]['fields']['name']);
+    $("#predict_btn").click(function(){
+        var champ1 = $("#champ1").val();
+        var champ2 = $("#champ2").val();
+        var champ3 = $("#champ3").val();
+        var champ4 = $("#champ4").val();
+        var champ5 = $("#champ5").val();
+        var champ6 = $("#champ6").val();
+        var champ7 = $("#champ7").val();
+        var champ8 = $("#champ8").val();
+        var champ9 = $("#champ9").val();
+        var champ10 = $("#champ10").val();
+        $.ajax({ // 예측 버튼을 누르면 ajax로 승률을 받아온다
+            type: "get", // 데이터를 전송하는 방법을 지정
+            url: "predict", // 통신할 url을 지정
+            data: {'champ1': champ1, 'csrfmiddlewaretoken': '{{ csrf_token }}'}, // 서버로 데이터 전송시 옵션
+            dataType: "json", // 서버측에서 전송한 데이터를 어떤 형식의 데이터로서 해석할 것인가를 지정, 없으면 알아서 판단
+            // 서버측에서 전송한 Response 데이터 형식 (json)
+            success: function(response){ // 통신 성공시 - 동적으로 좋아요 갯수 변경, 유저 목록 변경
+                $("#teamA").text(response.score.teamA+"%");
+                $("#teamB").text((100-response.score.teamA)+"%");
+            },
+            error: function(request, status, error){ // 통신 실패시 - 로그인 페이지 리다이렉트
+                console.log('에러');
+            },
+        });
+    });
 </script>
 </html>
